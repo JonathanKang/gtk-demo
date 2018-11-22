@@ -1,6 +1,7 @@
 #include <gtk/gtk.h>
 
 #include "gd-application.h"
+#include "gd-window.h"
 
 struct _GdApplication
 {
@@ -16,7 +17,7 @@ on_activate (GdApplication *application,
 {
     GtkWidget *window;
 
-    window = gtk_application_window_new (GTK_APPLICATION (application));
+    window = gd_window_new (GTK_APPLICATION (application));
     gtk_widget_show (window);
 }
 
