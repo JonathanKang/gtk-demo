@@ -4,6 +4,9 @@ sources = [
     'gd-window.c'
 ]
 
+sources += gdresources
+
 executable ('gtk-demo',
             sources,
-            dependencies : gd_dep)
+            dependencies : gd_dep
+)

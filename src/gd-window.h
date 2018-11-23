@@ -4,7 +4,7 @@
 #include <gtk/gtk.h>
 
 #define GD_TYPE_WINDOW (gd_window_get_type ())
-G_DECLARE_FINAL_TYPE (GdWindow, gd_window, GD, WINDOW, GtkWindow)
+G_DECLARE_FINAL_TYPE (GdWindow, gd_window, GD, WINDOW, GtkApplicationWindow)
 
 GtkWidget *gd_window_new (GtkApplication *application);
 
